@@ -1,0 +1,68 @@
+{
+  "materiais": [
+    {
+      "nome": "Cimento Votoran Todas as Obras 50kg",
+      "descricao": "Cimento de alta qualidade para uso geral em construções, rebocos e contrapisos.",
+      "quantidade": 150,
+      "unidadeMedida": "Saco",
+      "preco": 28.51,
+      "id": "1"
+    },
+    {
+      "nome": "Tijolo Baiano 9 Furos (19x19x29)",
+      "descricao": "Tijolo cerâmico para alvenaria de vedação. Medidas padronizadas.",
+      "quantidade": 2500,
+      "unidadeMedida": "Unidade",
+      "preco": 0.87,
+      "id": "2"
+    },
+    {
+      "nome": "ewqewq2.1",
+      "descricao": "qwe",
+      "quantidade": 2,
+      "unidadeMedida": "2",
+      "preco": 2.1,
+      "id": "445f"
+    },
+    {
+      "nome": "rqwrqw",
+      "descricao": "rqwrq",
+      "quantidade": 3,
+      "unidadeMedida": "3",
+      "preco": 3.2,
+      "id": "ef2a"
+    },
+    {
+      "nome": "yjjtj3",
+      "descricao": "tyjt",
+      "quantidade": 6,
+      "unidadeMedida": "6",
+      "preco": 6,
+      "id": "618e"
+    },
+    {
+      "id": "9f2a",
+      "nome": "qwrqwr",
+      "descricao": "qwrqwr",
+      "quantidade": 1,
+      "unidadeMedida": "saco",
+      "preco": 2
+    },
+    {
+      "nome": "dasda5.1",
+      "descricao": "dasd",
+      "quantidade": 2,
+      "unidadeMedida": "2",
+      "preco": 4,
+      "id": "0fbe"
+    },
+    {
+      "nome": "dasd",
+      "descricao": "dasd",
+      "quantidade": 7.1,
+      "unidadeMedida": "7",
+      "preco": 7,
+      "id": "a310"
+    }
+  ]
+}

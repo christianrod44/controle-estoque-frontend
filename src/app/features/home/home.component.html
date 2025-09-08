@@ -1,0 +1,57 @@
+<div class="container">
+  <h1>Lista de Materiais em Estoque</h1>
+
+  <ng-container *ngIf="materiais$ | async as materiais; else loading">
+
+    <div *ngIf="materiais.length > 0; else noData">
+      <table mat-table [dataSource]="materiais" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Nome </th>
+          <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="quantidade">
+          <th mat-header-cell *matHeaderCellDef> Quantidade </th>
+          <td mat-cell *matCellDef="let element"> {{element.quantidade}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="unidadeMedida">
+          <th mat-header-cell *matHeaderCellDef> Unidade </th>
+          <td mat-cell *matCellDef="let element"> {{element.unidadeMedida}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="preco">
+          <th mat-header-cell *matHeaderCellDef> Preço (R$) </th>
+          <td mat-cell *matCellDef="let element"> {{element.preco | number:'1.2-2'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="acoes">
+          <th mat-header-cell *matHeaderCellDef> Ações </th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button color="primary" aria-label="Editar material" (click)="editar(element.id)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" aria-label="Excluir material" (click)="excluir(element.id, element.nome)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+
+    <ng-template #noData>
+      <p>Nenhum material cadastrado.</p>
+    </ng-template>
+
+  </ng-container>
+
+  <ng-template #loading>
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+</div>
