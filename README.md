@@ -23,14 +23,6 @@ O sistema foi construído utilizando as versões mais recentes do Angular (19+) 
 - **Backend Simulado:** Utilização do `json-server` para simular uma API RESTful, permitindo que o front-end opere de forma completa e independente.
 - **Layout Responsivo:** O layout foi pensado para se adaptar a diferentes tamanhos de tela, de desktops a dispositivos móveis.
 
-## 📸 Screenshots
-
-*(Dica: Tire prints da sua tela de login e da home com a tabela e substitua os links abaixo. Você pode arrastar as imagens para a área de edição de um arquivo no GitHub para gerar o link)*
-
-| Tela de Login | Tela Principal (Home) |
-| :---: | :---: |
-| ![Tela de Login](URL_DA_SUA_IMAGEM_DE_LOGIN_AQUI) | ![Tela Principal](URL_DA_SUA_IMAGEM_DA_HOME_AQUI) |
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **Framework Principal:** Angular 19
@@ -54,7 +46,7 @@ Siga os passos abaixo para rodar a aplicação em seu ambiente local.
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://URL_DO_SEU_REPOSITORIO_AQUI.git
+git clone https://github.com/christianrod44/controle-estoque-frontend.git
 cd nome-da-pasta-do-projeto
 ```
 
@@ -78,7 +70,7 @@ Para que a autenticação funcione, você precisa criar sua própria chave de AP
     ```typescript
     // ...
     provider: new GoogleLoginProvider(
-      'COLE_SEU_ID_DO_CLIENTE_AQUI',
+      'ID_CLIENTE', //COLE AQUI APÓS CRIAR
       { oneTapEnabled: false }
     ),
     // ...
